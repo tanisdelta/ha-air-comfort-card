@@ -1,7 +1,7 @@
 import { en, type Translations } from './en';
 import { de } from './de';
 import { es } from './es';
-import { de } from './ca';
+import { ca } from './ca';
 const TRANSLATIONS: Record<string, Translations> = { en, de, es, ca };
 
 /**
