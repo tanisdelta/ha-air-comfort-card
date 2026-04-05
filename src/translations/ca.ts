@@ -1,6 +1,6 @@
 import type { Translations } from './en';
 
-export const de: Translations = {
+export const ca: Translations = {
   card: {
     title: "Confort de l’aire",
     entityNotFound: "Entitat no trobada",
