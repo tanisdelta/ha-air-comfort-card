@@ -1,4 +1,6 @@
-export const ca = {
+import type { Translations } from './en';
+
+export const de: Translations = {
   card: {
     title: "Confort de l’aire",
     entityNotFound: "Entitat no trobada",
@@ -17,7 +19,7 @@ export const ca = {
   history: {
     show: "Mostra l’historial de 24 hores",
     hide: "Amaga l’historial de 24 hores",
-    chartSuffix: "(24 h)",
+    chartSuffix: "(24h)",
   },
   status: {
     PLEASANT:       "Còmode",
@@ -29,12 +31,12 @@ export const ca = {
     "COLD & HUMID": "Fred i humit",
     "HOT & DRY":    "Calorós i sec",
     "HOT & HUMID":  "Calorós i humit",
-  } as Record<string, string>,
+  },
   airQuality: {
     good:     "Aire net",
-    moderate: "Qualitat de l’aire moderada",
-    poor:     "Aire contaminat",
-  } as Record<string, string>,
+    moderate: "Aire moderat",
+    poor:     "Aire deficient",
+  },
   thresholds: {
     cold:    "Fred",
     hot:     "Calorós",
@@ -43,7 +45,7 @@ export const ca = {
     good:    "Bo",
     stuffy:  "Carregat",
     poor:    "Dolent",
-    warning: "Alerta",
+    warning: "Advertència",
   },
   sensors: {
     temperature: "Temperatura",
@@ -51,7 +53,7 @@ export const ca = {
     co2:         "CO₂",
     no2:         "NO₂",
     pm1:         "PM 1",
-    pm25:        "PM 2.5",
+    pm25:        "PM 2,5",
     pm10:        "PM 10",
     radon:       "Radó",
     voc:         "VOC",
@@ -71,11 +73,9 @@ export const ca = {
     co2Entity:            "Entitat de CO₂",
     no2Entity:            "Entitat de NO₂",
     pm1Entity:            "Entitat de PM 1",
-    pm25Entity:           "Entitat de PM 2.5",
+    pm25Entity:           "Entitat de PM 2,5",
     pm10Entity:           "Entitat de PM 10",
     radonEntity:          "Entitat de radó",
     vocEntity:            "Entitat de VOC",
   },
 };
-
-export type Translations = typeof ca;
