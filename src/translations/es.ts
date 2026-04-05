@@ -1,6 +1,8 @@
-export const es = {
+import type { Translations } from './en';
+
+export const es: Translations = {
   card: {
-    title: "Comfort del Aire",
+    title: "Confort del aire",
     entityNotFound: "Entidad no encontrada",
     invalidSensorValues: "Valores de sensor no válidos",
   },
@@ -17,7 +19,7 @@ export const es = {
   history: {
     show: "Mostrar historial de 24 horas",
     hide: "Ocultar historial de 24 horas",
-    chartSuffix: "(24 h)",
+    chartSuffix: "(24h)",
   },
   status: {
     PLEASANT:       "Cómodo",
@@ -29,12 +31,12 @@ export const es = {
     "COLD & HUMID": "Frío y húmedo",
     "HOT & DRY":    "Caluroso y seco",
     "HOT & HUMID":  "Caluroso y húmedo",
-  } as Record<string, string>,
+  },
   airQuality: {
     good:     "Aire limpio",
-    moderate: "Calidad del aire moderada",
-    poor:     "Aire contaminado",
-  } as Record<string, string>,
+    moderate: "Aire moderado",
+    poor:     "Aire deficiente",
+  },
   thresholds: {
     cold:    "Frío",
     hot:     "Caluroso",
@@ -43,7 +45,7 @@ export const es = {
     good:    "Bueno",
     stuffy:  "Cargado",
     poor:    "Malo",
-    warning: "Alerta",
+    warning: "Advertencia",
   },
   sensors: {
     temperature: "Temperatura",
@@ -51,7 +53,7 @@ export const es = {
     co2:         "CO₂",
     no2:         "NO₂",
     pm1:         "PM 1",
-    pm25:        "PM 2.5",
+    pm25:        "PM 2,5",
     pm10:        "PM 10",
     radon:       "Radón",
     voc:         "VOC",
@@ -71,11 +73,9 @@ export const es = {
     co2Entity:            "Entidad de CO₂",
     no2Entity:            "Entidad de NO₂",
     pm1Entity:            "Entidad de PM 1",
-    pm25Entity:           "Entidad de PM 2.5",
+    pm25Entity:           "Entidad de PM 2,5",
     pm10Entity:           "Entidad de PM 10",
     radonEntity:          "Entidad de radón",
     vocEntity:            "Entidad de VOC",
   },
 };
-
-export type Translations = typeof en;
